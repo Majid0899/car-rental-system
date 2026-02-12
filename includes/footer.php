@@ -7,13 +7,13 @@
                 </div>
                 
                 <div>
-                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="/car-rental-system/views/customer/available-cars.php" class="text-gray-400 hover:text-white">Available Cars</a></li>
-                        <li><a href="/car-rental-system/views/auth/customer-register.php" class="text-gray-400 hover:text-white">Register as Customer</a></li>
-                        <li><a href="/car-rental-system/views/auth/agency-register.php" class="text-gray-400 hover:text-white">Register as Agency</a></li>
-                    </ul>
-                </div>
+                <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="./views/customer/available-cars.php" class="text-gray-400 hover:text-white">Available Cars</a></li>
+                    <li><a href="./views/auth/customer-register.php" class="text-gray-400 hover:text-white">Register as Customer</a></li>
+                    <li><a href="./views/auth/agency-register.php" class="text-gray-400 hover:text-white">Register as Agency</a></li>
+                </ul>
+            </div>
                 
                 <div>
                     <h3 class="text-lg font-bold mb-4">Contact</h3>

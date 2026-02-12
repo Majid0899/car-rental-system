@@ -89,14 +89,14 @@ $userName = $_SESSION['user_name'] ?? '';
             
             <?php if ($isLoggedIn): ?>
                 <?php if ($userType === 'agency'): ?>
-                    <a href="/car-rental-system/views/agency/add-car.php" class="block py-2 hover:text-gray-200">Manage Cars</a>
-                    <a href="/car-rental-system/views/agency/view-bookings.php" class="block py-2 hover:text-gray-200">View Bookings</a>
+                    <a href="./views/agency/add-car.php" class="block py-2 hover:text-gray-200">Manage Cars</a>
+                    <a href="./views/agency/view-bookings.php" class="block py-2 hover:text-gray-200">View Bookings</a>
                 <?php endif; ?>
-                <a href="/car-rental-system/logout.php" class="block py-2 hover:text-gray-200">Logout</a>
+                <a href="./logout.php" class="block py-2 hover:text-gray-200">Logout</a>
             <?php else: ?>
-                <a href="/car-rental-system/views/auth/login.php" class="block py-2 hover:text-gray-200">Login</a>
-                <a href="/car-rental-system/views/auth/customer-register.php" class="block py-2 hover:text-gray-200">Register as Customer</a>
-                <a href="/car-rental-system/views/auth/agency-register.php" class="block py-2 hover:text-gray-200">Register as Agency</a>
+                <a href="./views/auth/login.php" class="block py-2 hover:text-gray-200">Login</a>
+                <a href="./views/auth/customer-register.php" class="block py-2 hover:text-gray-200">Register as Customer</a>
+                <a href="./views/auth/agency-register.php" class="block py-2 hover:text-gray-200">Register as Agency</a>
             <?php endif; ?>
         </div>
     </div>
