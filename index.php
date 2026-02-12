@@ -15,11 +15,11 @@ require_once __DIR__ . '/includes/navbar.php';
                 Rent the perfect car for your journey
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="./views/customer/available-cars.php" 
+                <a href="/car-rental-system/views/customer/available-cars.php" 
                    class="px-8 py-4 bg-white text-purple-600 rounded-lg font-bold text-lg hover:shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-search mr-2"></i>Browse Available Cars
                 </a>
-                <a href="./views/auth/customer-register.php" 
+                <a href="/car-rental-system/views/auth/customer-register.php" 
                    class="px-8 py-4 bg-purple-800 text-white rounded-lg font-bold text-lg hover:bg-purple-900 transition transform hover:scale-105">
                     <i class="fas fa-user-plus mr-2"></i>Register Now
                 </a>
