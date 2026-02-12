@@ -4,7 +4,7 @@
  * Contains all database connection settings
  */
 
-define('DB_HOST', 'mysql.railway.internal');
+define('DB_HOST', 'mysql://root:nrNjZBwNQOOkhtlcrjWfjosfROfhtqDQ@metro.proxy.rlwy.net:30428/railway');
 define('DB_USER', 'root');
 define('DB_PASS', 'nrNjZBwNQOOkhtlcrjWfjosfROfhtqDQ');
 define('DB_NAME', 'railway');
