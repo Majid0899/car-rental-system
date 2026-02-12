@@ -122,14 +122,14 @@ class AuthController {
                 $_SESSION['user_email'] = $user->email;
                 
                 if ($user->user_type === 'agency') {
-                    header('Location: /car-rental-system/views/agency/add-car.php');
+                    header('Location: /views/agency/add-car.php');
                 } else {
                     if (isset($_SESSION['redirect_after_login'])) {
                         $redirect = $_SESSION['redirect_after_login'];
                         unset($_SESSION['redirect_after_login']);
                         header('Location: ' . $redirect);
                     } else {
-                        header('Location: /car-rental-system/views/customer/available-cars.php');
+                        header('Location: /views/customer/available-cars.php');
                     }
                 }
                 exit;
@@ -180,7 +180,7 @@ class AuthController {
     public function requireLogin() {
         if (!$this->isLoggedIn()) {
             $_SESSION['redirect_after_login'] = $_SERVER['REQUEST_URI'];
-            header('Location: /car-rental-system/views/auth/login.php');
+            header('Location: /views/auth/login.php');
             exit;
         }
     }
@@ -193,7 +193,7 @@ class AuthController {
         
         if (!$this->isCustomer()) {
             $_SESSION['error_message'] = "Access denied. This page is only for customers.";
-            header('Location: /car-rental-system/index.php');
+            header('Location: /index.php');
             exit;
         }
     }
@@ -206,7 +206,7 @@ class AuthController {
         
         if (!$this->isAgency()) {
             $_SESSION['error_message'] = "Access denied. This page is only for agencies.";
-            header('Location: /car-rental-system/index.php');
+            header('Location: /index.php');
             exit;
         }
     }
