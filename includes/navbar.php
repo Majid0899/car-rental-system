@@ -53,7 +53,7 @@ $userName = $_SESSION['user_name'] ?? '';
                         </div>
                     </div>
                 <?php else: ?>
-                    <a href="/car-rental-system/views/auth/login.php" class="hover:text-gray-200 transition">
+                    <a href="/views/auth/login.php" class="hover:text-gray-200 transition">
                         <i class="fas fa-sign-in-alt mr-1"></i> Login
                     </a>
                     <div class="relative group">
