@@ -4,10 +4,10 @@
  * Contains all database connection settings
  */
 
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql.railway.internal');
 define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'car_rental_system');
+define('DB_PASS', 'nrNjZBwNQOOkhtlcrjWfjosfROfhtqDQ');
+define('DB_NAME', 'railway');
 
 // Application Settings
 define('APP_NAME', 'Car Rental System');
