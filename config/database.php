@@ -4,14 +4,16 @@
  * Contains all database connection settings
  */
 
-define('DB_HOST', 'mysql://root:nrNjZBwNQOOkhtlcrjWfjosfROfhtqDQ@metro.proxy.rlwy.net:30428/railway');
+define('DB_HOST', 'metro.proxy.rlwy.net');
 define('DB_USER', 'root');
 define('DB_PASS', 'nrNjZBwNQOOkhtlcrjWfjosfROfhtqDQ');
 define('DB_NAME', 'railway');
+define('DB_PORT', 30428);
+
 
 // Application Settings
 define('APP_NAME', 'Car Rental System');
-define('BASE_URL', 'http://localhost/car-rental-system');
+define('BASE_URL', '/');
 
 // Session Settings
 define('SESSION_TIMEOUT', 3600); // 1 hour in seconds

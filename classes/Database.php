@@ -24,22 +24,28 @@ class Database {
      * Create database connection
      */
     private function connect() {
-        $this->conn = null;
-        
-        try {
-            $this->conn = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
-            
-            if ($this->conn->connect_error) {
-                throw new Exception("Connection failed: " . $this->conn->connect_error);
-            }
-            
-            $this->conn->set_charset("utf8mb4");
-            
-        } catch (Exception $e) {
-            die("Database Connection Error: " . $e->getMessage());
+    $this->conn = null;
+
+    try {
+        $this->conn = new mysqli(
+            $this->host,
+            $this->user,
+            $this->pass,
+            $this->dbname,
+            DB_PORT
+        );
+
+        if ($this->conn->connect_error) {
+            throw new Exception("Connection failed: " . $this->conn->connect_error);
         }
+
+        $this->conn->set_charset("utf8mb4");
+
+    } catch (Exception $e) {
+        die("Database Connection Error: " . $e->getMessage());
     }
-    
+}
+
     /**
      * Prepare SQL statement
      * @param string $sql
