@@ -12,13 +12,13 @@ if (session_status() === PHP_SESSION_NONE) {
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="/assets/js/main.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
     <style>
         .gradient-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
